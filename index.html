@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de alunos e notas</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <label for="">  Nome do aluno: </label>
+                <input type="text" class="form-control" id="campoNomeAluno">
+
+                <label for="">Ano Nascimento: </label>
+                <input type="number" class="form-control" id="campoAno">
+
+                <label for="">CPF: </label>
+                <input type="number" class="form-control" id="campoCPF">
+
+                <label for="">Endereço: </label>
+                <input type="text" class="form-control" id="campoEndereco">
+
+                <label for="">Telefone: </label>
+                <input type="number" class="form-control" id="campoTel">
+
+                <label for="">Número da matricula: </label>
+                <input type="number" class="form-control" id="campoNumMat">
+
+                <label for="">Curso: </label>
+                <input type="text" class="form-control" id="campoCurso">
+
+                <label for="">Escola: </label>
+                <input type="text" class="form-control" id="campoEscola">
+
+                <label for="">Nota 1: </label>
+                <input type="number" class="form-control" id="campoNota1">
+
+                <label for="">Nota 2: </label>
+                <input type="number" class="form-control" id="campoNota2">
+
+                <label for="">Nota 3: </label>
+                <input type="number" class="form-control" id="campoNota3">
+
+                <label for="">Nota 4: </label>
+                <input type="number" class="form-control" id="campoNota4">
+
+                <button class="btn btn-primary mt-3" id="calc">Cadastrar</button>
+
+                <h2>Nome: <span id="nome"> </span></h2>
+                <h2>Ano: <span id="ano"> </span></h2>
+                <h2>CPF: <span id="cpf"> </span></h2>
+                <h2>Endereço: <span id="end"> </span></h2>
+                <h2>Telefone: <span id="tel"> </span></h2>
+                <h2>Número da matricula: <span id="nummat"> </span></h2>
+                <h2>Curso: <span id="curso"> </span></h2>
+                <h2>Escola: <span id="escola"> </span></h2>
+                <h2>Nota 1: <span id="n1"> </span></h2>
+                <h2>Nota 2: <span id="n2"> </span></h2>
+                <h2>Nota 3: <span id="n3"> </span></h2>
+                <h2>Nota 4: <span id="n4"> </span></h2>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="./js/pessoa.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/aluno.js"></script>
+</body>
+</html>
