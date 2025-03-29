@@ -1,12 +1,12 @@
 namespace escola{
-    export abstract class Pessoa{
-        public _nome:string;
-        public _anoNasc:number;
-        public _cpf: number;
-        public _endereco: string;
-        public _tel: string;
+    export class Pessoa{
+        private _nome:string;
+        private _anoNasc:number;
+        private _cpf: string;
+        private _endereco: string;
+        private _tel: string;
 
-        constructor(nome:string, anoNasc:number, cpf:number, endereco:string, tel:string){
+        constructor(nome:string, anoNasc:number, cpf:string, endereco:string, tel:string){
             this._nome = nome;
             this._anoNasc = anoNasc;
             this._cpf = cpf;
@@ -34,7 +34,7 @@ namespace escola{
             return this._cpf;
         }
 
-        set cpf(cpf:number){
+        set cpf(cpf:string){
             this._cpf=cpf;
         }
 

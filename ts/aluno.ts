@@ -1,3 +1,5 @@
+/// <reference path = "pessoa.ts" />
+
 namespace escola{
     export class Aluno extends Pessoa{
 
@@ -9,8 +11,8 @@ namespace escola{
         private _nota3: number;
         private _nota4: number;
 
-        constructor(matricula:number, curso:string, escola:string, nota1:number, nota2:number, nota3:number, nota4:number,){
-            super();
+        constructor(nome:string, anoNasc:number, cpf:string, endereco:string, tel:string, matricula:number, curso:string, escola:string, nota1:number, nota2:number, nota3:number, nota4:number,){
+            super(nome, anoNasc, cpf, endereco, tel);
             this._matricula = matricula;
             this._curso = curso;
             this._escola = escola;
